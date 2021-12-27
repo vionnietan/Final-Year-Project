@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+Template Name: Nekmit
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Monash Cancer Institute</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{{ url_for('static',filename='styles/index.css') }}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay padtop" style="background-color: lightblue;"> 
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left"> 
+      <!-- ################################################################################################ -->
+      <h1><a href="">Monash Cancer Institute</a></h1>
+      <!-- ################################################################################################ -->
+    </div>
+    <nav id="mainav" class="fl_right"> 
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="about">About</a></li>
+        <li class="active"><a href="help">Help</a></li>
+        <li class="active"><a href="logout">Logout</a></li>
+
+
+        
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </header>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="post" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <form action="" method = "post" enctype="multipart/form-data">
+        <p>Has patient ever been diagnosed with Cancer ?</p>
+        <div class = "form-group">
+          <input
+          type = "text"
+          style="color: black;"
+          class = "form-control"
+          id = "vCancer"
+          name = "vCancer"
+          placeholder="Enter YES/NO"
+          />
+        </div>
+    </article>
+
+    <article>
+      <p>Is patient currently experiencing any symptoms?</p>
+      <div class = "form-group";">
+        <input
+        type = "text"
+        style="color: black;"
+        class = "form-control"
+        id = "vSymptoms"
+        name = "vSymptoms"
+        placeholder="Enter YES/NO. If Yes, enter symptoms"
+        />
+      </div>
+    </article>
+
+    <article>
+      <p>Is patient currently undergoing any treatment?</p>
+      <div class = "form-group">
+        <input
+        type = "text"
+        style="color: black;"
+        class = "form-control"
+        id = "vTreatment"
+        name = "vTreatment"
+        placeholder="Enter YES/NO. If YES, enter treatment"
+        />
+      </div>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+        <label style="color: black;">Upload Medical Image</label>
+        <input style="color: black; font-size: 15px;" type="file" name="file"/>
+        <input type="submit" name="submit" value="submit" style="color: black;">
+      </form>
+    </article>
+
+    <article>
+      <p>View your prediction result</p>
+        <ul class="nospace inline pushright">
+          <li><a class="btn inverse" href="result">View</a></li>
+        </ul>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+
+<p class="fl_right">Design by <a href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>

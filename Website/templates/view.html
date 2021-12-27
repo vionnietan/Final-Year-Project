@@ -1,0 +1,10 @@
+
+<!--
+FOR TESTING PURPOSE
+-->
+{% block title %} View All {% endblock %}
+{% block content %}
+    {% for item in values %}
+        <p>Name: {{item.first_name}}, Email: {{item.email}}, Password: {{item.password}}, Result: {{item.result}}}</p>
+    {% endfor %}
+ {% endblock %} 
